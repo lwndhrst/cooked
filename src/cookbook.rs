@@ -51,6 +51,22 @@ pub enum Material {
     DatePalm,
     EssenceOfLiquor,
     LeaveningAgent,
+    SnakeMeat,
+    Freekeh,
+    StarAnise,
+    MineralWater,
+    TeffFlour,
+    Teff,
+    ScorpionMeat,
+    Butter,
+    HighQualityHotPepper,
+    Cream,
+    Milk,
+    Salt,
+    Vinegar,
+    Wheat,
+    Grape,
+    WheatFlour,
 }
 
 #[derive(Debug, Deserialize, Serialize)]

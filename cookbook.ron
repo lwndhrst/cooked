@@ -22,6 +22,22 @@ Cookbook(
         DatePalm: "Date Palm",
         EssenceOfLiquor: "Essence of Liquor",
         LeaveningAgent: "Leavening Agent",
+        SnakeMeat: "Snake Meat",
+        Freekeh: "Freekeh",
+        StarAnise: "Star Anise",
+        MineralWater: "Mineral Water",
+        TeffFlour: "Teff Flour",
+        Teff: "Teff",
+        ScorpionMeat: "Scorpion Meat",
+        Butter: "Butter",
+        HighQualityHotPepper: "High-Quality Hot Pepper",
+        Cream: "Cream",
+        Milk: "Milk",
+        Salt: "Salt",
+        Vinegar: "Vinegar",
+        Wheat: "Wheat",
+        Grape: "Grape",
+        WheatFlour: "Wheat Flour",
     },
 
     recipes: {
@@ -73,6 +89,79 @@ Cookbook(
                 Sugar: 1,
                 LeaveningAgent: 4,
             }
+        ),
+        FreekehSnakeStew: (
+            ingredients: {
+                SnakeMeat: 3,
+                Freekeh: 6,
+                StarAnise: 2,
+                MineralWater: 5,
+            },
+        ),
+        TeffFlourDough: (
+            ingredients: {
+                TeffFlour: 1,
+                MineralWater: 1,
+            },
+        ),
+        TeffFlour: (
+            ingredients: {
+                Teff: 1,
+            },
+        ),
+        GrilledScorpion: (
+            ingredients: {
+                ScorpionMeat: 3,
+                Butter: 2,
+                Nutmeg: 3,
+                HighQualityHotPepper: 1,
+            },
+        ),
+        Butter: (
+            ingredients: {
+                Cream: 1,
+                Salt: 1,
+            },
+        ),
+        Cream: (
+            ingredients: {
+                Milk: 1,
+                Sugar: 1,
+            },
+        ),
+        PickledVegetables: (
+            ingredients: {
+                Paprika: 8,
+                Vinegar: 4,
+                LeaveningAgent: 2,
+                Sugar: 2,
+            },
+        ),
+        Vinegar: (
+            ingredients: {
+                Wheat: 1,
+                Grape: 1,
+                LeaveningAgent: 1,
+                Sugar: 1,
+            },
+        ),
+        WheatDough: (
+            ingredients: {
+                WheatFlour: 1,
+                MineralWater: 1,
+            },
+        ),
+        WheatFlour: (
+            ingredients: {
+                Wheat: 1,
+            },
+        ),
+        EssenceOfLiquor: (
+            ingredients: {
+                WheatFlour: 1,
+                Grape: 1,
+                LeaveningAgent: 1,
+            },
         ),
     },
 )
