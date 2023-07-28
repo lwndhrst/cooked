@@ -18,7 +18,7 @@ impl Cookbook {
 
             if let Some(recipe) = self.recipes.get(&material) {
                 for (material, amount) in recipe.ingredients.iter() {
-                    queue.push_back((material.to_owned(), amount * n * 10 / avg_proc_rate(m)));
+                    queue.push_back((material.to_owned(), amount * n * 10 / proc_rate(m)));
                 }
             }
         }
@@ -81,6 +81,6 @@ const MAX_PROC_RATE: u64 = 40;
 /// I'd like to use integers exclusively, so the number of crafts is multiplied by 10 and then
 /// divided this factor to obtain the amount of materials required... Kinda ugly, but it is what it
 /// is...
-fn avg_proc_rate(m: u64) -> u64 {
+fn proc_rate(m: u64) -> u64 {
     AVG_PROC_RATE + (MAX_PROC_RATE - AVG_PROC_RATE) * m / 100
 }
