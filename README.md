@@ -7,7 +7,13 @@ Completely wrong and useless because:
 3. Only 'Valencia Meal' and related recipes are implemented at this time
 4. Fuck material substitution
 
-## Usage (just don't, really)
+## Installation (just don't, really)
+
+```
+cargo install --git https://github.com/lwndhrst/cooked.git
+```
+
+## Usage (no, please...)
 
 ```
 cooked --help
