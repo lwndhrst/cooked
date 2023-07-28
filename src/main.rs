@@ -15,5 +15,5 @@ struct Cookbook {
 fn main() {
     let cookbook: Cookbook = ron::from_str(include_str!("../cookbook.ron")).unwrap();
 
-    println!("Cookbook: {}", ron::ser::to_string(&cookbook).unwrap());
+    println!("Cookbook: {}", ron::ser::to_string_pretty(&cookbook, ron::ser::PrettyConfig::default()).unwrap());
 }
