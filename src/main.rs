@@ -1,13 +1,13 @@
 mod cookbook;
 
 use clap::Parser;
-use cookbook::*;
+use cookbook::{Cookbook, Material};
 
 #[derive(Debug, Parser)]
 struct Args {
     /// The recipe you wish to cook
     #[clap(value_enum)]
-    recipe: CookbookKey,
+    recipe: Material,
 
     /// Number of cooks
     #[arg(short)]
@@ -18,6 +18,8 @@ fn main() {
     let cookbook: Cookbook = ron::from_str(include_str!("../cookbook.ron")).unwrap();
     let args = Args::parse();
 
-    println!("Selected: {:?}", &args.recipe);
-    println!("Cookbook: {:?}", cookbook.recipes[&args.recipe]);
+    let materials = cookbook.required_mats(args.recipe, args.n);
+    for (material, amount) in materials {
+        println!("{}: {}", cookbook.materials.get(&material).unwrap(), amount);
+    }
 }

@@ -1,13 +1,77 @@
 Cookbook(
+    materials: {
+        ValenciaMeal: "Valencia Meal",
+        Couscous: "Couscous",
+        TeffSandwich: "Teff Sandwich",
+        KingOfJungleHamburg: "King of Jungle Hamburg",
+        FigPie: "Fig Pie",
+        DatePalmWine: "Date Palm Wine",
+        FreekehSnakeStew: "Freekeh Snake Stew",
+        TeffFlourDough: "Teff Flour Dough",
+        Nutmeg: "Nutmeg",
+        Paprika: "Paprika",
+        GrilledScorpion: "Grilled Scorpion",
+        TeffBread: "Teff Bread",
+        RedSauce: "Red Sauce",
+        LionMeat: "Lion Meat",
+        PickledVegetables: "Pickled Vegetables",
+        Fig: "Fig",
+        WheatDough: "Wheat Dough",
+        Sugar: "Sugar",
+        OliveOil: "Olive Oil",
+        DatePalm: "Date Palm",
+        EssenceOfLiquor: "Essence of Liquor",
+        LeaveningAgent: "Leavening Agent",
+    },
+
     recipes: {
         ValenciaMeal: (
-            name: "Valencia Meal",
             ingredients: {
                 Couscous: 1,
                 TeffSandwich: 1,
                 KingOfJungleHamburg: 1,
                 FigPie: 2,
                 DatePalmWine: 2,
+            }
+        ),
+        Couscous: (
+            ingredients: {
+                FreekehSnakeStew: 1,
+                TeffFlourDough: 6,
+                Nutmeg: 3,
+                Paprika: 4,
+            }
+        ),
+        TeffSandwich: (
+            ingredients: {
+                FreekehSnakeStew: 1,
+                GrilledScorpion: 1,
+                TeffBread: 1,
+                RedSauce: 3,
+            }
+        ),
+        KingOfJungleHamburg: (
+            ingredients: {
+                LionMeat: 4,
+                TeffBread: 4,
+                PickledVegetables: 2,
+                Nutmeg: 3,
+            }
+        ),
+        FigPie: (
+            ingredients: {
+                Fig: 5,
+                WheatDough: 3,
+                Sugar: 3,
+                OliveOil: 2,
+            }
+        ),
+        DatePalmWine: (
+            ingredients: {
+                DatePalm: 5,
+                EssenceOfLiquor: 2,
+                Sugar: 1,
+                LeaveningAgent: 4,
             }
         ),
     },
