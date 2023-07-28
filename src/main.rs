@@ -14,7 +14,7 @@ struct Args {
     n: u64,
 
     /// What's your additional max proc chance from mastery? (in %)
-    #[arg(short, default_value_t = 10)]
+    #[arg(short, default_value_t = 15)]
     m: u64,
 }
 
