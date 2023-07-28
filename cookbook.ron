@@ -1,0 +1,14 @@
+Cookbook(
+    recipes: {
+        "valencia_meal": (
+            name: "Valencia Meal",
+            ingredients: [
+                ("couscous", 1),
+                ("teff_sandwich", 1),
+                ("king_of_jungle_hamburg", 1),
+                ("fig_pie", 2),
+                ("date_palm_wine", 2),
+            ]
+        ),
+    },
+)
