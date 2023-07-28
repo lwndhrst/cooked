@@ -10,5 +10,8 @@ Completely wrong and useless because:
 ## Usage (just don't, really)
 
 ```
-cooked -n 1000 valencia-meal
+cooked --help
+```
+```
+cooked valencia-meal -n 1000
 ```
