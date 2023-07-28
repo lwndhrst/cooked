@@ -8,7 +8,7 @@ pub struct Cookbook {
 }
 
 impl Cookbook {
-    pub fn required_mats(&self, recipe: Material, n: u64) -> HashMap<Material, u64> {
+    pub fn required_mats(&self, recipe: Material, n: u64, m: u64) -> HashMap<Material, u64> {
         let mut result = HashMap::new();
         let mut queue = VecDeque::new();
         queue.push_back((recipe, n));
@@ -18,7 +18,7 @@ impl Cookbook {
 
             if let Some(recipe) = self.recipes.get(&material) {
                 for (material, amount) in recipe.ingredients.iter() {
-                    queue.push_back((material.to_owned(), amount * n * 10 / 25));
+                    queue.push_back((material.to_owned(), amount * n * 10 / (25 + 15 * m / 100)));
                 }
             }
         }
