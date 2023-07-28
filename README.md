@@ -7,7 +7,7 @@ Completely wrong and useless because:
 3. Only 'Valencia Meal' and related recipes are implemented at this time
 4. Fuck material substitution
 
-## Usage
+## Usage (just don't, really)
 
 ```
 cooked -n 1000 valencia-meal
