@@ -163,5 +163,13 @@ Cookbook(
                 LeaveningAgent: 1,
             },
         ),
+        TeffBread: (
+            ingredients: {
+                TeffFlour: 5,
+                MineralWater: 3,
+                LeaveningAgent: 2,
+                Salt: 2
+            },
+        ),
     },
 )

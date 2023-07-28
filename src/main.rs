@@ -5,11 +5,11 @@ use cookbook::{Cookbook, Material};
 
 #[derive(Debug, Parser)]
 struct Args {
-    /// The recipe you wish to cook
+    /// Which recipe do you want to cook?
     #[clap(value_enum)]
     recipe: Material,
 
-    /// Number of cooks
+    /// How many do you need?
     #[arg(short)]
     n: u64,
 }
