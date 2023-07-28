@@ -7,13 +7,15 @@ Completely wrong and useless because:
 3. Only 'Valencia Meal' and related recipes are implemented at this time
 4. Fuck material substitution
 
-## Installation (just don't, really)
+## Installation (don't)
 
 ```
 cargo install --git https://github.com/lwndhrst/cooked.git
 ```
 
-## Usage (no, please...)
+Note: You might have to add `~/.cargo/bin` to your `PATH`.
+
+## Usage (please, just don't...)
 
 ```
 cooked --help
